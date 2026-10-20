@@ -1,78 +1,1385 @@
-09:41
-5G
-Q
-LinguaQadam EduMobile Pro
-🔥 7
-💎 380
-ҚАЗ
-1-МОДУЛЬ • АҒЫЛШЫН НЕГІЗДЕРІ
-Сәлем, Дос! Әрі қарай жалғастыр
-Бүгінгі күн мақсаты: 3 сөзді меңгеру
-🚀
+<!DOCTYPE html>
+<html lang="kk" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>LinguaQadam — English Learning App</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Plus Jakarta Sans for UI + Outfit for Numbers/Badges -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            midnight: '#0B0F19',
+            surface: '#131B2E',
+            surfaceLight: '#1E293B',
+            mint: {
+              300: '#6EE7B7',
+              400: '#34D399',
+              500: '#05DF72',
+              600: '#059669',
+            },
+            indigoNeon: '#4F46E5',
+            violetNeon: '#7C3AED',
+            amberGold: '#F59E0B',
+            coralRed: '#EF4444'
+          },
+          boxShadow: {
+            'tactile-mint': '0 4px 0 #047857, 0 8px 16px rgba(5, 223, 114, 0.25)',
+            'tactile-indigo': '0 4px 0 #3730A3, 0 8px 16px rgba(79, 70, 229, 0.3)',
+            'tactile-surface': '0 4px 0 #0F172A',
+            'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)'
+          }
+        }
+      }
+    }
+  </script>
 
-⭐
-1-Қадам: Сәлемдесу 3 тапсырма қалды
-✈️
-2-Қадам: Саяхат Бастауға дайын
-💻
-3-Қадам: IT & Ғылым 🔒 Жабық (3-деңгей)
-👑
-Үлкен Тест +100 Алмас
-3D Сөздік карточкалары
-Карточканы басып аударыңыз немесе тыңдаңыз
-1 / 6
-Барлығы IT / Tech Education Science
-Tech Аударма 🔄
-🚀
-Innovation
-/ˌɪn.əˈveɪ.ʃən/
-Табиғи айтылуы (US)
-Аудармасы Қайтару 🔄
-Жаңашылдық, инновация
-Мысал:
-"Innovation drives true progress."
-"Жаңашылдық нағыз прогреске жетелейді."
-Жаттаған болсаңыз, батырманы басыңыз 👇
-← Жаттадым (+10 XP) →
-Жылдам жұптар
-Сәйкестендіру Combo x1
-Уақыт
-00:30
+  <style>
+    /* Custom Mobile App Stylings */
+    body {
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
 
-🎉
-Керемет жылдамдық!
-Барлық ағылшын сөздерін дұрыс байланыстырдыңыз
-+40 XP +15 💎
-Қайта ойнау 🔁
-Сөйлем Құрастыру Квесті
-Бөліктерді ретімен басып, грамматиканы құраңыз
-2 / 3 Кезең
-Мағынасы:
-«Білім саған болашақта үлкен күш береді»
-Төмендегі сөздерді басып жинаңыз
+    /* 3D Tactile Action Buttons */
+    .btn-tactile {
+      transition: all 0.08s ease-in-out;
+    }
+    .btn-tactile:active {
+      transform: translateY(3px) scale(0.98);
+      box-shadow: 0 1px 0 rgba(0,0,0,0.4) !important;
+    }
 
-Өшіру 🔄 Тексеру
+    /* 3D Flip Card */
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+    .preserve-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
 
-Ғылыми-тәжірибелік зерттеу
-Қорғау комиссиясына арналған A/B нәтижелері
-Сынақ тобы 40 оқушы
-Есте сақтау +48%
-Жылдамдық 2.4x
-A/B Эксперимент: 14 күндік динамика p < 0.01
+    /* Custom Hide Scrollbar */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-Эксперименттік топ (LinguaQadam)
-Бақылау тобы (Дәстүрлі)
-Педагогикалық тұжырым:
-«Мобильді микро-оқыту және интерактивті қайталау алгоритмдері оқушылардың лексикалық базасын дәстүрлі жаттау әдісіне қарағанда 48%-ға тиімдірек бекітетіні эмпирикалық түрде дәлелденді.»
-❤️ 5
+    /* Pulsing & Shine Animations */
+    @keyframes pulseRing {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.1); opacity: 0.2; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .pulse-ring {
+      animation: pulseRing 2.4s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 h-full flex items-center justify-center p-0 sm:p-4 overflow-hidden select-none">
 
-Аудармасын таңдаңыз
-Knowledge
-/ˈnɒl.ɪdʒ/
+  <!-- Android Phone Shell Simulation Frame -->
+  <div class="w-full max-w-[430px] h-[100dvh] sm:h-[860px] sm:max-h-[95vh] bg-midnight sm:rounded-[44px] sm:border-[8px] sm:border-slate-800 shadow-2xl flex flex-col relative overflow-hidden">
+    
+    <!-- TOP ANDROID STATUS BAR & BRAND HEADER -->
+    <header class="bg-midnight/90 backdrop-blur-md border-b border-slate-800/80 px-4 pt-3 pb-2.5 z-40 shrink-0">
+      
+      <!-- OS Status Bar Line -->
+      <div class="flex items-center justify-between text-xs text-slate-400 font-medium mb-2 px-1">
+        <span class="font-bold tracking-wider text-[11px] text-slate-300">09:41</span>
+        <div class="flex items-center gap-1.5 text-[11px]">
+          <span>5G</span>
+          <i data-lucide="wifi" class="w-3.5 h-3.5"></i>
+          <i data-lucide="battery-charging" class="w-3.5 h-3.5 text-mint-400"></i>
+        </div>
+      </div>
 
-Дұрыс!
-+10 XP алынды
-Келесі →
-Хабарлама
-Үйрену Сөздік Ойындар Квест Зерттеу
+      <!-- Main App Bar: Logo + Streak + Coins + Language Switcher -->
+      <div class="flex items-center justify-between gap-1.5">
+        
+        <!-- Brand Name with Qadam Icon -->
+        <div class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-2xl bg-gradient-to-tr from-mint-500 via-mint-400 to-indigoNeon flex items-center justify-center shadow-lg shadow-mint-500/20 text-slate-950 font-display font-extrabold text-xl leading-none">
+            Q
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display font-black text-base text-white tracking-tight flex items-center gap-1">
+              Lingua<span class="text-mint-400">Qadam</span>
+            </span>
+            <span class="text-[9px] font-bold text-slate-400 uppercase tracking-wider" id="txtHeaderRole">EduMobile Pro</span>
+          </div>
+        </div>
+
+        <!-- Badges & Controls -->
+        <div class="flex items-center gap-2">
+          
+          <!-- Streak -->
+          <div class="flex items-center gap-1 bg-surfaceLight/80 border border-amberGold/30 px-2 py-1 rounded-full text-amberGold text-xs font-display font-extrabold shadow-sm">
+            <span>🔥</span>
+            <span id="streakCounter">7</span>
+          </div>
+
+          <!-- Gems/Coins -->
+          <div class="flex items-center gap-1 bg-surfaceLight/80 border border-mint-500/30 px-2 py-1 rounded-full text-mint-400 text-xs font-display font-extrabold shadow-sm">
+            <span>💎</span>
+            <span id="coinCounter">380</span>
+          </div>
+
+          <!-- Language Switcher Button (KZ / RU) -->
+          <button onclick="toggleAppLanguage()" id="langToggleBtn" class="flex items-center gap-1 bg-indigoNeon text-white font-bold text-[10px] px-2.5 py-1.2 rounded-full border border-indigo-400/40 shadow-tactile-indigo btn-tactile">
+            <span id="langIndicator">ҚАЗ</span>
+            <i data-lucide="globe" class="w-3 h-3"></i>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- MAIN SCROLLABLE APP CONTENT VIEWPORT -->
+    <main id="appViewport" class="flex-1 overflow-y-auto no-scrollbar relative p-4 flex flex-col">
+      
+      <!-- ============================================== -->
+      <!-- TAB 1: ҮЙРЕНУ (LEARNING ROADMAP / SKILL PATH)   -->
+      <!-- ============================================== -->
+      <section id="tab-learn" class="app-screen flex-1 flex flex-col">
+        
+        <!-- Welcome Hero Banner -->
+        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigoNeon/30 via-surface to-mint-500/10 border border-slate-700/60 p-4 mb-5 shadow-glass">
+          <div class="relative z-10 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-mint-500/20 text-mint-400 border border-mint-500/30 inline-block mb-1" id="bannerLevelTag">
+                1-МОДУЛЬ • АҒЫЛШЫН НЕГІЗДЕРІ
+              </span>
+              <h2 class="text-lg font-display font-extrabold text-white" id="bannerGreeting">Сәлем, Дос! Әрі қарай жалғастыр</h2>
+              <p class="text-xs text-slate-300 mt-0.5" id="bannerSubtitle">Бүгінгі күн мақсаты: 3 сөзді меңгеру</p>
+            </div>
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-mint-500 to-indigoNeon flex items-center justify-center text-2xl shadow-lg shadow-mint-500/30">
+              🚀
+            </div>
+          </div>
+          <!-- Decorative Background circle -->
+          <div class="absolute -right-6 -bottom-6 w-28 h-28 bg-mint-500/10 rounded-full blur-2xl pointer-events-none"></div>
+        </div>
+
+        <!-- Duolingo-style Skill Path Timeline Nodes -->
+        <div class="flex-1 flex flex-col items-center justify-start py-2 space-y-7 relative">
+          
+          <!-- Background SVG connection line -->
+          <svg class="absolute top-6 bottom-6 w-32 h-[82%] pointer-events-none stroke-slate-800" stroke-width="6" stroke-dasharray="10 8" fill="none">
+            <path d="M 64 20 Q 110 90 64 160 T 64 300 Q 10 370 64 440" />
+          </svg>
+
+          <!-- Node 1: Basics 1 (Active) -->
+          <div class="relative flex flex-col items-center">
+            <div class="relative">
+              <div class="absolute inset-0 rounded-full bg-mint-500 pulse-ring"></div>
+              <button onclick="startLesson(1)" class="w-16 h-16 rounded-full bg-mint-500 text-slate-950 flex items-center justify-center font-display font-black text-2xl shadow-tactile-mint btn-tactile relative z-10">
+                ⭐
+              </button>
+            </div>
+            <div class="mt-2 text-center">
+              <span class="font-display font-extrabold text-xs text-white block" id="node1Title">1-Қадам: Сәлемдесу</span>
+              <span class="text-[10px] text-mint-400 font-semibold" id="node1Desc">3 тапсырма қалды</span>
+            </div>
+          </div>
+
+          <!-- Node 2: Travel & Discovery (Unlocked) -->
+          <div class="relative flex flex-col items-center transform translate-x-10">
+            <button onclick="startLesson(2)" class="w-16 h-16 rounded-full bg-gradient-to-tr from-indigoNeon to-violetNeon text-white flex items-center justify-center font-display font-black text-2xl shadow-tactile-indigo btn-tactile">
+              ✈️
+            </button>
+            <div class="mt-2 text-center">
+              <span class="font-display font-extrabold text-xs text-white block" id="node2Title">2-Қадам: Саяхат</span>
+              <span class="text-[10px] text-indigo-300 font-semibold" id="node2Desc">Бастауға дайын</span>
+            </div>
+          </div>
+
+          <!-- Node 3: IT & Tech Words (Locked) -->
+          <div class="relative flex flex-col items-center transform -translate-x-10">
+            <button onclick="showToastLocked()" class="w-16 h-16 rounded-full bg-surfaceLight border-2 border-slate-700 text-slate-500 flex items-center justify-center font-display font-black text-2xl shadow-tactile-surface opacity-80">
+              💻
+            </button>
+            <div class="mt-2 text-center">
+              <span class="font-display font-extrabold text-xs text-slate-400 block" id="node3Title">3-Қадам: IT & Ғылым</span>
+              <span class="text-[10px] text-slate-500 font-semibold">🔒 Жабық (3-деңгей)</span>
+            </div>
+          </div>
+
+          <!-- Node 4: Final Boss Chest (Trophy) -->
+          <div class="relative flex flex-col items-center">
+            <button onclick="showToastLocked()" class="w-16 h-16 rounded-2xl bg-surfaceLight border-2 border-amberGold/40 text-amberGold flex items-center justify-center font-display font-black text-2xl shadow-tactile-surface">
+              👑
+            </button>
+            <div class="mt-2 text-center">
+              <span class="font-display font-extrabold text-xs text-slate-300 block" id="node4Title">Үлкен Тест</span>
+              <span class="text-[10px] text-amberGold font-semibold">+100 Алмас</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- TAB 2: СӨЗДІК (3D FLIP FLASHCARDS + AUDIO)     -->
+      <!-- ============================================== -->
+      <section id="tab-dict" class="app-screen hidden flex-1 flex flex-col">
+        
+        <!-- Header & Category Pills -->
+        <div class="flex items-center justify-between mb-3">
+          <div>
+            <h2 class="text-lg font-display font-extrabold text-white" id="dictTitle">3D Сөздік карточкалары</h2>
+            <p class="text-xs text-slate-400" id="dictSubtitle">Карточканы басып аударыңыз немесе тыңдаңыз</p>
+          </div>
+          <span class="text-xs font-display font-bold text-mint-400 bg-mint-500/10 border border-mint-500/30 px-2.5 py-1 rounded-xl" id="dictCounter">
+            1 / 6
+          </span>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="flex gap-1.5 overflow-x-auto no-scrollbar pb-2 mb-2">
+          <button onclick="filterVocab('all')" class="cat-pill active px-3 py-1 rounded-full text-xs font-bold bg-mint-500 text-slate-950 transition">Барлығы</button>
+          <button onclick="filterVocab('Tech')" class="cat-pill px-3 py-1 rounded-full text-xs font-bold bg-surfaceLight text-slate-400 hover:text-white transition">IT / Tech</button>
+          <button onclick="filterVocab('Education')" class="cat-pill px-3 py-1 rounded-full text-xs font-bold bg-surfaceLight text-slate-400 hover:text-white transition">Education</button>
+          <button onclick="filterVocab('Science')" class="cat-pill px-3 py-1 rounded-full text-xs font-bold bg-surfaceLight text-slate-400 hover:text-white transition">Science</button>
+        </div>
+
+        <!-- 3D Interactive Card View -->
+        <div class="flex-1 flex flex-col items-center justify-center py-2">
+          <div onclick="flipCardAction()" class="perspective-1000 w-full max-w-[310px] h-[340px] cursor-pointer">
+            <div id="flashCard3d" class="preserve-3d transition-transform duration-500 relative w-full h-full">
+              
+              <!-- FRONT: English Word, Phonetic, Native Audio -->
+              <div class="backface-hidden absolute inset-0 rounded-[32px] bg-gradient-to-b from-surface to-slate-900 border-2 border-slate-700/80 p-6 flex flex-col items-center justify-between text-center shadow-glass">
+                <div class="w-full flex justify-between items-center text-xs font-semibold text-slate-400">
+                  <span class="bg-indigoNeon/20 text-indigo-300 px-2.5 py-0.5 rounded-full border border-indigo-400/30" id="cardCategoryBadge">Tech</span>
+                  <span class="text-slate-500 flex items-center gap-1" id="cardFlipHint">
+                    <span>Аударма</span> 🔄
+                  </span>
+                </div>
+
+                <div class="my-auto flex flex-col items-center">
+                  <div class="text-5xl mb-3 filter drop-shadow" id="cardIcon">🚀</div>
+                  <h3 class="font-display font-black text-3xl text-white tracking-wide" id="cardEn">Innovation</h3>
+                  <p class="text-sm font-semibold text-mint-400 mt-1 font-mono tracking-wider" id="cardPhonetic">/ˌɪn.əˈveɪ.ʃən/</p>
+                </div>
+
+                <!-- Pronounce Button -->
+                <button onclick="event.stopPropagation(); pronounceCurrentWord();" class="w-full py-3 rounded-2xl bg-surfaceLight hover:bg-slate-700 border border-slate-600 text-white font-bold text-xs flex items-center justify-center gap-2 btn-tactile">
+                  <i data-lucide="volume-2" class="w-4 h-4 text-mint-400"></i>
+                  <span id="btnAudioLabel">Табиғи айтылуы (US)</span>
+                </button>
+              </div>
+
+              <!-- BACK: Kazakh / Russian Translation & Sentence Example -->
+              <div class="backface-hidden rotate-y-180 absolute inset-0 rounded-[32px] bg-gradient-to-br from-indigoNeon via-indigo-900 to-slate-950 border-2 border-indigo-500/80 p-6 flex flex-col items-center justify-between text-center shadow-glass text-white">
+                <div class="w-full flex justify-between items-center text-xs font-semibold text-indigo-200">
+                  <span id="lblBackTrans">Аудармасы</span>
+                  <span id="lblBackReturn">Қайтару 🔄</span>
+                </div>
+
+                <div class="my-auto">
+                  <h3 class="font-display font-black text-2xl text-mint-300 mb-3" id="cardTranslation">Жаңашылдық, инновация</h3>
+                  
+                  <div class="bg-black/30 border border-white/10 rounded-2xl p-3.5 text-left text-xs space-y-1.5">
+                    <span class="text-[10px] font-extrabold uppercase text-indigo-300 block" id="lblExampleSent">Мысал:</span>
+                    <p class="italic text-slate-100 font-medium" id="cardExampleEn">"Innovation drives true progress."</p>
+                    <p class="text-slate-300 text-[11px]" id="cardExampleTr">"Жаңашылдық нағыз прогреске жетелейді."</p>
+                  </div>
+                </div>
+
+                <span class="text-[10px] text-indigo-300 font-medium" id="lblCardMemorizeTip">Жаттаған болсаңыз, батырманы басыңыз 👇</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex items-center gap-3 pt-2">
+          <button onclick="prevVocabCard()" class="w-14 h-12 rounded-2xl bg-surfaceLight border border-slate-700 text-white font-black text-lg flex items-center justify-center btn-tactile">
+            ←
+          </button>
+          <button onclick="memorizedVocabCard()" class="flex-1 h-12 rounded-2xl bg-mint-500 text-slate-950 font-display font-black text-sm flex items-center justify-center gap-2 shadow-tactile-mint btn-tactile">
+            <i data-lucide="check" class="w-4 h-4 stroke-[3]"></i>
+            <span id="btnMemorizedWord">Жаттадым (+10 XP)</span>
+          </button>
+          <button onclick="nextVocabCard()" class="w-14 h-12 rounded-2xl bg-surfaceLight border border-slate-700 text-white font-black text-lg flex items-center justify-center btn-tactile">
+            →
+          </button>
+        </div>
+
+      </section>
+
+      <!-- ============================================== -->
+      <!-- TAB 3: ОЙЫНДАР (SPEED DUEL MATCHING PAIRS)     -->
+      <!-- ============================================== -->
+      <section id="tab-games" class="app-screen hidden flex-1 flex flex-col">
+        
+        <!-- Game HUD -->
+        <div class="flex items-center justify-between mb-3 bg-surfaceLight/60 p-3 rounded-2xl border border-slate-800">
+          <div>
+            <span class="text-[10px] font-bold text-slate-400 uppercase" id="gameModeLabel">Жылдам жұптар</span>
+            <h3 class="font-display font-extrabold text-sm text-white flex items-center gap-1.5">
+              <span>Сәйкестендіру</span>
+              <span class="text-xs bg-amberGold/20 text-amberGold px-1.5 py-0.2 rounded-md font-mono" id="gameCombo">Combo x1</span>
+            </h3>
+          </div>
+          <div class="text-right">
+            <span class="text-[10px] font-bold text-slate-400 uppercase" id="gameTimerLabel">Уақыт</span>
+            <div class="font-display font-black text-base text-mint-400 font-mono" id="gameTimer">00:30</div>
+          </div>
+        </div>
+
+        <!-- 8 Interactive Match Tiles Grid -->
+        <div id="matchGameGrid" class="grid grid-cols-2 gap-2.5 flex-1 content-center my-auto">
+          <!-- Dynamically populated 8 cards -->
+        </div>
+
+        <!-- Game Success Box (Initially Hidden) -->
+        <div id="gameSuccessModal" class="hidden my-auto p-5 rounded-3xl bg-surface border-2 border-mint-500/80 text-center shadow-glass">
+          <div class="text-5xl mb-2">🎉</div>
+          <h3 class="font-display font-black text-xl text-white" id="gameFinishTitle">Керемет жылдамдық!</h3>
+          <p class="text-xs text-slate-300 mt-1" id="gameFinishSubtitle">Барлық ағылшын сөздерін дұрыс байланыстырдыңыз</p>
+          <div class="mt-4 flex items-center justify-center gap-2">
+            <span class="px-3 py-1 rounded-full bg-mint-500/20 text-mint-400 font-extrabold text-xs">+40 XP</span>
+            <span class="px-3 py-1 rounded-full bg-amberGold/20 text-amberGold font-extrabold text-xs">+15 💎</span>
+          </div>
+          <button onclick="restartMatchingGame()" class="mt-5 w-full py-3 rounded-2xl bg-mint-500 text-slate-950 font-display font-black text-sm shadow-tactile-mint btn-tactile">
+            <span id="btnPlayAgain">Қайта ойнау</span> 🔁
+          </button>
+        </div>
+
+      </section>
+
+      <!-- ============================================== -->
+      <!-- TAB 4: КВЕСТ (SENTENCE BUILDER ADVENTURE)      -->
+      <!-- ============================================== -->
+      <section id="tab-quest" class="app-screen hidden flex-1 flex flex-col">
+        
+        <div class="flex items-center justify-between mb-3">
+          <div>
+            <h2 class="text-lg font-display font-extrabold text-white" id="questTitle">Сөйлем Құрастыру Квесті</h2>
+            <p class="text-xs text-slate-400" id="questSubtitle">Бөліктерді ретімен басып, грамматиканы құраңыз</p>
+          </div>
+          <span class="text-xs font-display font-bold text-violetNeon bg-violetNeon/20 border border-violetNeon/30 px-2.5 py-1 rounded-xl" id="questStageTag">
+            2 / 3 Кезең
+          </span>
+        </div>
+
+        <!-- Native Meaning Card -->
+        <div class="bg-gradient-to-r from-surface to-surfaceLight border border-slate-700/80 rounded-2xl p-4 shadow-glass mb-4">
+          <span class="text-[10px] font-bold text-mint-400 uppercase tracking-wider block mb-1" id="lblMeaningTarget">Мағынасы:</span>
+          <p class="text-base font-extrabold text-white" id="questSentenceTarget">«Білім саған болашақта үлкен күш береді»</p>
+        </div>
+
+        <!-- Assembly Target Area (Selected Words) -->
+        <div class="flex-1 flex flex-col justify-center my-auto">
+          <div id="questSelectedArea" class="min-h-[72px] p-2.5 bg-midnight/80 rounded-2xl border-2 border-dashed border-slate-700 flex flex-wrap gap-2 items-center justify-center mb-6">
+            <span class="text-xs text-slate-500 font-semibold" id="questEmptyHint">Төмендегі сөздерді басып жинаңыз</span>
+          </div>
+
+          <!-- Clickable Word Pills Bank -->
+          <div id="questWordBank" class="flex flex-wrap gap-2 justify-center max-w-[320px] mx-auto">
+            <!-- Dynamically injected word pills -->
+          </div>
+        </div>
+
+        <!-- Quest Controls -->
+        <div class="flex gap-2.5 pt-3">
+          <button onclick="clearQuestSelection()" class="px-4 h-12 rounded-2xl bg-surfaceLight border border-slate-700 text-slate-300 font-bold text-xs flex items-center justify-center btn-tactile">
+            <span id="btnQuestReset">Өшіру 🔄</span>
+          </button>
+          <button onclick="verifyQuestSolution()" class="flex-1 h-12 rounded-2xl bg-indigoNeon text-white font-display font-black text-sm flex items-center justify-center gap-2 shadow-tactile-indigo btn-tactile">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span id="btnQuestCheck">Тексеру</span>
+          </button>
+        </div>
+
+      </section>
+
+      <!-- ============================================== -->
+      <!-- TAB 5: ЗЕРТТЕУ (SCIENTIFIC RESEARCH / DEFENSE) -->
+      <!-- ============================================== -->
+      <section id="tab-research" class="app-screen hidden flex-1 flex flex-col overflow-y-auto no-scrollbar pb-3">
+        
+        <div class="flex items-center gap-2.5 mb-3">
+          <div class="w-10 h-10 rounded-2xl bg-indigoNeon/20 border border-indigo-400/40 flex items-center justify-center text-indigo-400">
+            <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h2 class="text-base font-display font-black text-white" id="resHeaderTitle">Ғылыми-тәжірибелік зерттеу</h2>
+            <p class="text-[11px] text-slate-400" id="resHeaderSubtitle">Қорғау комиссиясына арналған A/B нәтижелері</p>
+          </div>
+        </div>
+
+        <!-- KPI 3 Cards -->
+        <div class="grid grid-cols-3 gap-2 mb-3">
+          <div class="bg-surface p-2.5 rounded-2xl border border-slate-800 text-center">
+            <span class="text-[10px] text-slate-400 block" id="kpi1Label">Сынақ тобы</span>
+            <span class="font-display font-black text-base text-white">40 <span class="text-[10px] font-normal text-slate-400">оқушы</span></span>
+          </div>
+          <div class="bg-surface p-2.5 rounded-2xl border border-mint-500/30 text-center">
+            <span class="text-[10px] text-mint-400 block" id="kpi2Label">Есте сақтау</span>
+            <span class="font-display font-black text-base text-mint-400">+48%</span>
+          </div>
+          <div class="bg-surface p-2.5 rounded-2xl border border-indigoNeon/30 text-center">
+            <span class="text-[10px] text-indigo-300 block" id="kpi3Label">Жылдамдық</span>
+            <span class="font-display font-black text-base text-indigo-300">2.4x</span>
+          </div>
+        </div>
+
+        <!-- Custom Canvas Chart: A/B Testing Comparison -->
+        <div class="bg-surface rounded-2xl border border-slate-800 p-3.5 mb-3 shadow-glass">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs font-bold text-white" id="chartHeading">A/B Эксперимент: 14 күндік динамика</span>
+            <span class="text-[9px] bg-mint-500/20 text-mint-400 px-2 py-0.5 rounded-md font-mono">p &lt; 0.01</span>
+          </div>
+          
+          <div class="w-full h-40 relative">
+            <canvas id="researchChartCanvas" class="w-full h-full"></canvas>
+          </div>
+
+          <div class="flex items-center justify-center gap-4 mt-2 text-[10px]">
+            <div class="flex items-center gap-1.5">
+              <span class="w-3 h-1.5 rounded-full bg-mint-400 inline-block"></span>
+              <span class="text-slate-300" id="legendExp">Эксперименттік топ (LinguaQadam)</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span class="w-3 h-1.5 rounded-full bg-slate-500 inline-block"></span>
+              <span class="text-slate-400" id="legendControl">Бақылау тобы (Дәстүрлі)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic Thesis Conclusion -->
+        <div class="bg-surfaceLight/70 border border-slate-800 rounded-2xl p-3.5 space-y-1.5 text-xs text-slate-300">
+          <div class="flex items-center gap-1.5 text-mint-400 font-bold text-xs">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span id="thesisTitle">Педагогикалық тұжырым:</span>
+          </div>
+          <p class="text-[11px] leading-relaxed text-slate-300" id="thesisBody">
+            «Мобильді микро-оқыту және интерактивті қайталау алгоритмдері оқушылардың лексикалық базасын дәстүрлі жаттау әдісіне қарағанда 48%-ға тиімдірек бекітетіні эмпирикалық түрде дәлелденді.»
+          </p>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- INTERACTIVE RAPID QUIZ MODAL (When tapping a node) -->
+    <div id="quizModal" class="absolute inset-0 bg-midnight/95 backdrop-blur-xl z-50 flex flex-col p-4 transition-all duration-300 translate-y-full">
+      <!-- Quiz Header -->
+      <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+        <button onclick="closeQuizModal()" class="w-8 h-8 rounded-full bg-surfaceLight flex items-center justify-center text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+        <!-- Hearts -->
+        <div class="flex items-center gap-1 text-coralRed font-display font-extrabold text-sm">
+          <span>❤️</span>
+          <span id="quizHearts">5</span>
+        </div>
+        <!-- Progress -->
+        <div class="w-32 bg-slate-800 h-2.5 rounded-full overflow-hidden">
+          <div id="quizProgressBar" class="h-full bg-mint-500 transition-all duration-300" style="width: 33%;"></div>
+        </div>
+      </div>
+
+      <!-- Quiz Content Area -->
+      <div class="flex-1 flex flex-col justify-center my-auto">
+        <span class="text-[11px] font-bold text-mint-400 uppercase tracking-widest text-center block mb-2" id="quizQuestionType">Аудармасын таңдаңыз</span>
+        
+        <div class="bg-surface rounded-3xl p-5 border border-slate-700/80 text-center mb-6 shadow-glass">
+          <div class="flex items-center justify-center gap-2">
+            <h3 class="font-display font-black text-3xl text-white" id="quizTargetWord">Knowledge</h3>
+            <button onclick="pronounceWord(quizCurrentWord)" class="w-8 h-8 rounded-full bg-mint-500/20 text-mint-400 flex items-center justify-center">
+              <i data-lucide="volume-2" class="w-4 h-4"></i>
+            </button>
+          </div>
+          <p class="text-xs text-slate-400 mt-1 font-mono" id="quizPhonetic">/ˈnɒl.ɪdʒ/</p>
+        </div>
+
+        <!-- 4 Options Grid -->
+        <div id="quizOptionsList" class="space-y-2.5">
+          <!-- Dynamically inserted buttons -->
+        </div>
+      </div>
+
+      <!-- Result Banner & Next Button -->
+      <div id="quizFeedbackBanner" class="p-4 rounded-2xl bg-surface border border-slate-800 hidden items-center justify-between mt-auto">
+        <div>
+          <h4 class="font-display font-black text-sm" id="feedbackTitle">Дұрыс!</h4>
+          <p class="text-xs opacity-80" id="feedbackSubtitle">+10 XP алынды</p>
+        </div>
+        <button onclick="nextQuizStep()" id="btnQuizContinue" class="px-5 py-2.5 rounded-xl bg-mint-500 text-slate-950 font-display font-black text-xs shadow-tactile-mint btn-tactile">
+          Келесі →
+        </button>
+      </div>
+    </div>
+
+    <!-- Toast Notification Message -->
+    <div id="appToast" class="absolute top-16 left-1/2 -translate-x-1/2 bg-surfaceLight border border-slate-700 text-white text-xs px-4 py-2 rounded-full shadow-2xl z-50 transition-all duration-300 opacity-0 pointer-events-none">
+      Хабарлама
+    </div>
+
+    <!-- BOTTOM ANDROID NAVIGATION BAR (5 TABS) -->
+    <nav class="bg-midnight/95 backdrop-blur-md border-t border-slate-800/80 px-2 py-2 flex items-center justify-around shrink-0 z-40">
+      
+      <!-- Tab 1: Learn -->
+      <button onclick="navigateToTab('learn')" id="nav-btn-learn" class="nav-btn active flex flex-col items-center gap-0.5 px-2 py-1 text-mint-400 transition">
+        <i data-lucide="map" class="w-5 h-5"></i>
+        <span class="text-[10px] font-bold" id="navLblLearn">Үйрену</span>
+      </button>
+
+      <!-- Tab 2: Dictionary -->
+      <button onclick="navigateToTab('dict')" id="nav-btn-dict" class="nav-btn flex flex-col items-center gap-0.5 px-2 py-1 text-slate-400 hover:text-slate-200 transition">
+        <i data-lucide="book-open" class="w-5 h-5"></i>
+        <span class="text-[10px] font-bold" id="navLblDict">Сөздік</span>
+      </button>
+
+      <!-- Tab 3: Games -->
+      <button onclick="navigateToTab('games')" id="nav-btn-games" class="nav-btn flex flex-col items-center gap-0.5 px-2 py-1 text-slate-400 hover:text-slate-200 transition">
+        <i data-lucide="gamepad-2" class="w-5 h-5"></i>
+        <span class="text-[10px] font-bold" id="navLblGames">Ойындар</span>
+      </button>
+
+      <!-- Tab 4: Quest -->
+      <button onclick="navigateToTab('quest')" id="nav-btn-quest" class="nav-btn flex flex-col items-center gap-0.5 px-2 py-1 text-slate-400 hover:text-slate-200 transition">
+        <i data-lucide="compass" class="w-5 h-5"></i>
+        <span class="text-[10px] font-bold" id="navLblQuest">Квест</span>
+      </button>
+
+      <!-- Tab 5: Research -->
+      <button onclick="navigateToTab('research')" id="nav-btn-research" class="nav-btn flex flex-col items-center gap-0.5 px-2 py-1 text-slate-400 hover:text-slate-200 transition">
+        <i data-lucide="line-chart" class="w-5 h-5"></i>
+        <span class="text-[10px] font-bold" id="navLblResearch">Зерттеу</span>
+      </button>
+
+    </nav>
+
+  </div>
+
+  <!-- COMPLETE APP LOGIC ENGINE (OFFLINE & NATIVE AUDIO SYNTHESIS) -->
+  <script>
+    // ==========================================
+    // 1. SOUND SYSTEM: Synthesized Web Audio API
+    // No external MP3 files needed! 100% offline.
+    // ==========================================
+    const AudioEngine = {
+      ctx: null,
+      init() {
+        if (!this.ctx) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          this.ctx = new AudioContext();
+        }
+      },
+      playTone(freq, type = 'sine', duration = 0.15, vol = 0.15) {
+        try {
+          this.init();
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = type;
+          osc.frequency.setValueAtTime(freq, this.ctx.currentTime);
+          gain.gain.setValueAtTime(vol, this.ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + duration);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start();
+          osc.stop(this.ctx.currentTime + duration);
+        } catch (e) {
+          console.log('Audio waiting user interaction');
+        }
+      },
+      tap() { this.playTone(320, 'sine', 0.05, 0.08); },
+      success() {
+        this.playTone(523.25, 'sine', 0.12);
+        setTimeout(() => this.playTone(659.25, 'sine', 0.12), 90);
+        setTimeout(() => this.playTone(783.99, 'sine', 0.22), 180);
+      },
+      error() {
+        this.playTone(220, 'triangle', 0.15);
+        setTimeout(() => this.playTone(180, 'triangle', 0.2), 110);
+      },
+      levelUp() {
+        this.playTone(440, 'sine', 0.1);
+        setTimeout(() => this.playTone(554.37, 'sine', 0.1), 80);
+        setTimeout(() => this.playTone(659.25, 'sine', 0.15), 160);
+        setTimeout(() => this.playTone(880, 'sine', 0.3), 240);
+      }
+    };
+
+    // ==========================================
+    // 2. TEXT-TO-SPEECH (Web Speech API Native)
+    // ==========================================
+    function pronounceWord(text) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utter = new SpeechSynthesisUtterance(text);
+        utter.lang = 'en-US';
+        utter.rate = 0.9;
+        window.speechSynthesis.speak(utter);
+      }
+    }
+
+    // ==========================================
+    // 3. MULTILINGUAL LOCALIZATION (KZ / RU)
+    // ==========================================
+    let currentLanguage = 'kk'; // 'kk' or 'ru'
+
+    const i18n = {
+      kk: {
+        role: "EduMobile Pro",
+        bannerLevel: "1-МОДУЛЬ • АҒЫЛШЫН НЕГІЗДЕРІ",
+        bannerGreet: "Сәлем, Дос! Әрі қарай жалғастыр",
+        bannerSub: "Бүгінгі күн мақсаты: 3 сөзді меңгеру",
+        node1: "1-Қадам: Сәлемдесу",
+        node1Sub: "3 тапсырма қалды",
+        node2: "2-Қадам: Саяхат",
+        node2Sub: "Бастауға дайын",
+        node3: "3-Қадам: IT & Ғылым",
+        node4: "Үлкен Тест",
+        navLearn: "Үйрену",
+        navDict: "Сөздік",
+        navGames: "Ойындар",
+        navQuest: "Квест",
+        navResearch: "Зерттеу",
+        dictTitle: "3D Сөздік карточкалары",
+        dictSubtitle: "Карточканы басып аударыңыз немесе тыңдаңыз",
+        cardAudioBtn: "Табиғи айтылуы (US)",
+        cardTransLabel: "Аудармасы",
+        cardReturnLabel: "Қайтару 🔄",
+        cardExLabel: "Мысал:",
+        cardMemoTip: "Жаттаған болсаңыз, батырманы басыңыз 👇",
+        btnLearned: "Жаттадым (+10 XP)",
+        gameMode: "Жылдам жұптар",
+        gameTime: "Уақыт",
+        gameFinTitle: "Керемет жылдамдық!",
+        gameFinSub: "Барлық ағылшын сөздерін дұрыс байланыстырдыңыз",
+        btnPlayAgain: "Қайта ойнау",
+        questHead: "Сөйлем Құрастыру Квесті",
+        questSub: "Бөліктерді ретімен басып, грамматиканы құраңыз",
+        meaningTarget: "Мағынасы:",
+        questReset: "Өшіру 🔄",
+        questCheck: "Тексеру",
+        questHint: "Төмендегі сөздерді басып жинаңыз",
+        resTitle: "Ғылыми-тәжірибелік зерттеу",
+        resSub: "Қорғау комиссиясына арналған A/B нәтижелері",
+        kpi1: "Сынақ тобы",
+        kpi2: "Есте сақтау",
+        kpi3: "Жылдамдық",
+        chartHead: "A/B Эксперимент: 14 күндік динамика",
+        legendExp: "Эксперименттік топ (LinguaQadam)",
+        legendCtrl: "Бақылау тобы (Дәстүрлі)",
+        thesisTitle: "Педагогикалық тұжырым:",
+        thesisBody: "«Мобильді микро-оқыту және интерактивті қайталау алгоритмдері оқушылардың лексикалық базасын дәстүрлі жаттау әдісіне қарағанда 48%-ға тиімдірек бекітетіні эмпирикалық түрде дәлелденді.»",
+        correct: "Өте дұрыс!",
+        wrong: "Қате жауап, қайталап көріңіз",
+        next: "Келесі →"
+      },
+      ru: {
+        role: "EduMobile Pro",
+        bannerLevel: "МОДУЛЬ 1 • БАЗОВЫЙ АНГЛИЙСКИЙ",
+        bannerGreet: "Привет! Продолжай обучение",
+        bannerSub: "Цель на сегодня: выучить 3 слова",
+        node1: "Шаг 1: Приветствие",
+        node1Sub: "Осталось 3 задания",
+        node2: "Шаг 2: Путешествия",
+        node2Sub: "Готов к запуску",
+        node3: "Шаг 3: IT и Наука",
+        node4: "Финальный Тест",
+        navLearn: "Обучение",
+        navDict: "Словарь",
+        navGames: "Игры",
+        navQuest: "Квест",
+        navResearch: "Аналитика",
+        dictTitle: "3D Карточки слов",
+        dictSubtitle: "Нажмите на карточку для перевода и аудио",
+        cardAudioBtn: "Произношение (US)",
+        cardTransLabel: "Перевод",
+        cardReturnLabel: "Назад 🔄",
+        cardExLabel: "Пример:",
+        cardMemoTip: "Если запомнили слово, жмите кнопку 👇",
+        btnLearned: "Выучил (+10 XP)",
+        gameMode: "Скоростные пары",
+        gameTime: "Время",
+        gameFinTitle: "Отличная скорость!",
+        gameFinSub: "Вы успешно сопоставили все английские слова",
+        btnPlayAgain: "Сыграть снова",
+        questHead: "Квест: Собери предложение",
+        questSub: "Нажимайте слова по порядку для верной грамматики",
+        meaningTarget: "Значение:",
+        questReset: "Сброс 🔄",
+        questCheck: "Проверить",
+        questHint: "Нажимайте на слова снизу для сбора",
+        resTitle: "Научно-практическое исследование",
+        resSub: "Данные A/B тестирования для защиты",
+        kpi1: "Тест-группа",
+        kpi2: "Удержание",
+        kpi3: "Скорость",
+        chartHead: "A/B Эксперимент: 14 дней динамики",
+        legendExp: "Экспериментальная группа (LinguaQadam)",
+        legendCtrl: "Контрольная группа (Обычная)",
+        thesisTitle: "Педагогический вывод:",
+        thesisBody: "«Эмпирически доказано: мобильное микро-обучение и алгоритмы геймификации улучшают долговременное запоминание лексики на 48% по сравнению со стандартным заучиванием.»",
+        correct: "Верно!",
+        wrong: "Неверно, попробуйте снова",
+        next: "Далее →"
+      }
+    };
+
+    function toggleAppLanguage() {
+      AudioEngine.tap();
+      currentLanguage = currentLanguage === 'kk' ? 'ru' : 'kk';
+      document.getElementById('langIndicator').innerText = currentLanguage === 'kk' ? 'ҚАЗ' : 'РУС';
+      applyLocalization();
+    }
+
+    function applyLocalization() {
+      const t = i18n[currentLanguage];
+      document.getElementById('txtHeaderRole').innerText = t.role;
+      document.getElementById('bannerLevelTag').innerText = t.bannerLevel;
+      document.getElementById('bannerGreeting').innerText = t.bannerGreet;
+      document.getElementById('bannerSubtitle').innerText = t.bannerSub;
+      document.getElementById('node1Title').innerText = t.node1;
+      document.getElementById('node1Desc').innerText = t.node1Sub;
+      document.getElementById('node2Title').innerText = t.node2;
+      document.getElementById('node2Desc').innerText = t.node2Sub;
+      document.getElementById('node3Title').innerText = t.node3;
+      document.getElementById('node4Title').innerText = t.node4;
+
+      document.getElementById('navLblLearn').innerText = t.navLearn;
+      document.getElementById('navLblDict').innerText = t.navDict;
+      document.getElementById('navLblGames').innerText = t.navGames;
+      document.getElementById('navLblQuest').innerText = t.navQuest;
+      document.getElementById('navLblResearch').innerText = t.navResearch;
+
+      document.getElementById('dictTitle').innerText = t.dictTitle;
+      document.getElementById('dictSubtitle').innerText = t.dictSubtitle;
+      document.getElementById('btnAudioLabel').innerText = t.cardAudioBtn;
+      document.getElementById('lblBackTrans').innerText = t.cardTransLabel;
+      document.getElementById('lblBackReturn').innerText = t.cardReturnLabel;
+      document.getElementById('lblExampleSent').innerText = t.cardExLabel;
+      document.getElementById('lblCardMemorizeTip').innerText = t.cardMemoTip;
+      document.getElementById('btnMemorizedWord').innerText = t.btnLearned;
+
+      document.getElementById('gameModeLabel').innerText = t.gameMode;
+      document.getElementById('gameTimerLabel').innerText = t.gameTime;
+      document.getElementById('gameFinishTitle').innerText = t.gameFinTitle;
+      document.getElementById('gameFinishSubtitle').innerText = t.gameFinSub;
+      document.getElementById('btnPlayAgain').innerText = t.btnPlayAgain;
+
+      document.getElementById('questTitle').innerText = t.questHead;
+      document.getElementById('questSubtitle').innerText = t.questSub;
+      document.getElementById('lblMeaningTarget').innerText = t.meaningTarget;
+      document.getElementById('btnQuestReset').innerText = t.questReset;
+      document.getElementById('btnQuestCheck').innerText = t.questCheck;
+
+      document.getElementById('resHeaderTitle').innerText = t.resTitle;
+      document.getElementById('resHeaderSubtitle').innerText = t.resSub;
+      document.getElementById('kpi1Label').innerText = t.kpi1;
+      document.getElementById('kpi2Label').innerText = t.kpi2;
+      document.getElementById('kpi3Label').innerText = t.kpi3;
+      document.getElementById('chartHeading').innerText = t.chartHead;
+      document.getElementById('legendExp').innerText = t.legendExp;
+      document.getElementById('legendControl').innerText = t.legendCtrl;
+      document.getElementById('thesisTitle').innerText = t.thesisTitle;
+      document.getElementById('thesisBody').innerText = t.thesisBody;
+
+      // Update current views
+      renderVocabCard();
+      renderQuestView();
+      drawResearchChart();
+    }
+
+    // ==========================================
+    // 4. VOCABULARY DATA & 3D FLIP CARD LOGIC
+    // ==========================================
+    const vocabularyList = [
+      {
+        id: 1,
+        en: "Innovation",
+        phonetic: "/ˌɪn.əˈveɪ.ʃən/",
+        cat: "Tech",
+        icon: "💡",
+        tr_kk: "Жаңашылдық, инновация",
+        tr_ru: "Инновация, новшество",
+        ex_en: "Innovation drives sustainable progress.",
+        ex_kk: "Жаңашылдық тұрақты дамуға жетелейді.",
+        ex_ru: "Инновации двигают устойчивый прогресс."
+      },
+      {
+        id: 2,
+        en: "Knowledge",
+        phonetic: "/ˈnɒl.ɪdʒ/",
+        cat: "Education",
+        icon: "🧠",
+        tr_kk: "Білім, ілім",
+        tr_ru: "Знание, познание",
+        ex_en: "Knowledge is true power in modern world.",
+        ex_kk: "Заманауи әлемде білім — нағыз күш.",
+        ex_ru: "Знание — истинная сила в современном мире."
+      },
+      {
+        id: 3,
+        en: "Research",
+        phonetic: "/rɪˈsɜːrtʃ/",
+        cat: "Science",
+        icon: "🔬",
+        tr_kk: "Зерттеу, ғылыми ізденіс",
+        tr_ru: "Исследование, научный поиск",
+        ex_en: "Our scientific research proved the concept.",
+        ex_kk: "Біздің ғылыми зерттеуіміз гипотезаны дәлелдеді.",
+        ex_ru: "Наше научное исследование доказало концепцию."
+      },
+      {
+        id: 4,
+        en: "Challenge",
+        phonetic: "/ˈtʃæl.ɪndʒ/",
+        cat: "Education",
+        icon: "⛰️",
+        tr_kk: "Сынақ, күрделі тапсырма",
+        tr_ru: "Вызов, испытание",
+        ex_en: "Embrace every difficult challenge.",
+        ex_kk: "Әрбір күрделі сынақты қабылда.",
+        ex_ru: "Принимай любой сложный вызов."
+      },
+      {
+        id: 5,
+        en: "Development",
+        phonetic: "/dɪˈvel.əp.mənt/",
+        cat: "Tech",
+        icon: "📈",
+        tr_kk: "Даму, өсу үрдісі",
+        tr_ru: "Развитие, разработка",
+        ex_en: "Continuous skill development is essential.",
+        ex_kk: "Үздіксіз шеберлікті дамыту маңызды.",
+        ex_ru: "Непрерывное развитие навыков необходимо."
+      },
+      {
+        id: 6,
+        en: "Discovery",
+        phonetic: "/dɪˈskʌv.ər.i/",
+        cat: "Science",
+        icon: "🔭",
+        tr_kk: "Жаңалық ашу, табу",
+        tr_ru: "Открытие, находка",
+        ex_en: "Great discoveries inspire the youth.",
+        ex_kk: "Ұлы ашылулар жастарды шабыттандырады.",
+        ex_ru: "Великие открытия вдохновляют молодежь."
+      }
+    ];
+
+    let currentVocabFilter = 'all';
+    let filteredVocab = [...vocabularyList];
+    let vocabIndex = 0;
+    let isCardFlipped = false;
+
+    function filterVocab(cat) {
+      AudioEngine.tap();
+      currentVocabFilter = cat;
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        btn.classList.remove('bg-mint-500', 'text-slate-950');
+        btn.classList.add('bg-surfaceLight', 'text-slate-400');
+      });
+      event.target.classList.add('bg-mint-500', 'text-slate-950');
+      event.target.classList.remove('bg-surfaceLight', 'text-slate-400');
+
+      if (cat === 'all') {
+        filteredVocab = [...vocabularyList];
+      } else {
+        filteredVocab = vocabularyList.filter(item => item.cat === cat);
+      }
+      vocabIndex = 0;
+      renderVocabCard();
+    }
+
+    function renderVocabCard() {
+      if (filteredVocab.length === 0) return;
+      const item = filteredVocab[vocabIndex];
+
+      document.getElementById('dictCounter').innerText = `${vocabIndex + 1} / ${filteredVocab.length}`;
+      document.getElementById('cardCategoryBadge').innerText = item.cat;
+      document.getElementById('cardIcon').innerText = item.icon;
+      document.getElementById('cardEn').innerText = item.en;
+      document.getElementById('cardPhonetic').innerText = item.phonetic;
+
+      document.getElementById('cardTranslation').innerText = currentLanguage === 'kk' ? item.tr_kk : item.tr_ru;
+      document.getElementById('cardExampleEn').innerText = `"${item.ex_en}"`;
+      document.getElementById('cardExampleTr').innerText = `"${currentLanguage === 'kk' ? item.ex_kk : item.ex_ru}"`;
+
+      // Reset flip
+      if (isCardFlipped) {
+        document.getElementById('flashCard3d').classList.remove('rotate-y-180');
+        isCardFlipped = false;
+      }
+    }
+
+    function flipCardAction() {
+      AudioEngine.tap();
+      isCardFlipped = !isCardFlipped;
+      const card = document.getElementById('flashCard3d');
+      if (isCardFlipped) {
+        card.classList.add('rotate-y-180');
+      } else {
+        card.classList.remove('rotate-y-180');
+      }
+    }
+
+    function pronounceCurrentWord() {
+      const item = filteredVocab[vocabIndex];
+      pronounceWord(item.en);
+    }
+
+    function nextVocabCard() {
+      AudioEngine.tap();
+      vocabIndex = (vocabIndex + 1) % filteredVocab.length;
+      renderVocabCard();
+    }
+
+    function prevVocabCard() {
+      AudioEngine.tap();
+      vocabIndex = (vocabIndex - 1 + filteredVocab.length) % filteredVocab.length;
+      renderVocabCard();
+    }
+
+    function memorizedVocabCard() {
+      AudioEngine.success();
+      showToast("+10 XP Қосылды! Керемет!");
+      nextVocabCard();
+    }
+
+    // ==========================================
+    // 5. MATCHING PAIRS SPEED GAME
+    // ==========================================
+    let matchPairsData = [];
+    let firstSelectedTile = null;
+    let secondSelectedTile = null;
+    let isMatchLocked = false;
+    let matchTimerInterval = null;
+    let matchTimeSeconds = 30;
+
+    function initMatchingGame() {
+      clearInterval(matchTimerInterval);
+      matchTimeSeconds = 30;
+      document.getElementById('gameTimer').innerText = '00:30';
+      document.getElementById('gameSuccessModal').classList.add('hidden');
+      document.getElementById('matchGameGrid').classList.remove('hidden');
+
+      // Pick 4 words
+      const sample = vocabularyList.slice(0, 4);
+      matchPairsData = [];
+      sample.forEach(item => {
+        matchPairsData.push({ id: item.id, text: item.en, type: 'en', key: item.id });
+        matchPairsData.push({ id: item.id, text: currentLanguage === 'kk' ? item.tr_kk : item.tr_ru, type: 'tr', key: item.id });
+      });
+
+      matchPairsData.sort(() => 0.5 - Math.random());
+
+      const grid = document.getElementById('matchGameGrid');
+      grid.innerHTML = '';
+
+      matchPairsData.forEach((tile, index) => {
+        const btn = document.createElement('button');
+        btn.id = `match-tile-${index}`;
+        btn.className = "h-20 p-2.5 rounded-2xl bg-surface border-2 border-slate-700 text-white font-display font-bold text-xs flex items-center justify-center text-center shadow-glass transition-all hover:border-mint-400 btn-tactile";
+        btn.innerText = tile.text;
+        btn.onclick = () => onMatchTileClicked(index, tile);
+        grid.appendChild(btn);
+      });
+
+      // Start Countdown
+      matchTimerInterval = setInterval(() => {
+        matchTimeSeconds--;
+        const formatted = matchTimeSeconds < 10 ? `00:0${matchTimeSeconds}` : `00:${matchTimeSeconds}`;
+        document.getElementById('gameTimer').innerText = formatted;
+        if (matchTimeSeconds <= 0) {
+          clearInterval(matchTimerInterval);
+          AudioEngine.error();
+          showToast(currentLanguage === 'kk' ? "Уақыт аяқталды!" : "Время вышло!");
+        }
+      }, 1000);
+    }
+
+    function onMatchTileClicked(index, tile) {
+      if (isMatchLocked) return;
+      const el = document.getElementById(`match-tile-${index}`);
+      if (el.classList.contains('bg-mint-500') || el.classList.contains('opacity-40')) return;
+
+      AudioEngine.tap();
+
+      if (!firstSelectedTile) {
+        firstSelectedTile = { index, tile, el };
+        el.classList.add('border-mint-400', 'bg-mint-500/20', 'text-mint-300');
+      } else if (!secondSelectedTile && firstSelectedTile.index !== index) {
+        secondSelectedTile = { index, tile, el };
+        el.classList.add('border-mint-400', 'bg-mint-500/20', 'text-mint-300');
+        isMatchLocked = true;
+
+        if (firstSelectedTile.tile.key === secondSelectedTile.tile.key && firstSelectedTile.tile.type !== secondSelectedTile.tile.type) {
+          // Matched Pair!
+          AudioEngine.success();
+          setTimeout(() => {
+            firstSelectedTile.el.className = "h-20 p-2.5 rounded-2xl bg-mint-500 text-slate-950 font-display font-black text-xs flex items-center justify-center text-center opacity-40 cursor-default shadow-none";
+            secondSelectedTile.el.className = "h-20 p-2.5 rounded-2xl bg-mint-500 text-slate-950 font-display font-black text-xs flex items-center justify-center text-center opacity-40 cursor-default shadow-none";
+            firstSelectedTile = null;
+            secondSelectedTile = null;
+            isMatchLocked = false;
+            checkMatchGameEnd();
+          }, 300);
+        } else {
+          // Wrong pair
+          AudioEngine.error();
+          firstSelectedTile.el.classList.add('border-coralRed', 'bg-coralRed/20');
+          secondSelectedTile.el.classList.add('border-coralRed', 'bg-coralRed/20');
+          setTimeout(() => {
+            firstSelectedTile.el.className = "h-20 p-2.5 rounded-2xl bg-surface border-2 border-slate-700 text-white font-display font-bold text-xs flex items-center justify-center text-center shadow-glass transition-all btn-tactile";
+            secondSelectedTile.el.className = "h-20 p-2.5 rounded-2xl bg-surface border-2 border-slate-700 text-white font-display font-bold text-xs flex items-center justify-center text-center shadow-glass transition-all btn-tactile";
+            firstSelectedTile = null;
+            secondSelectedTile = null;
+            isMatchLocked = false;
+          }, 550);
+        }
+      }
+    }
+
+    function checkMatchGameEnd() {
+      const remaining = document.querySelectorAll('#matchGameGrid button:not(.opacity-40)');
+      if (remaining.length === 0) {
+        clearInterval(matchTimerInterval);
+        AudioEngine.levelUp();
+        document.getElementById('matchGameGrid').classList.add('hidden');
+        document.getElementById('gameSuccessModal').classList.remove('hidden');
+      }
+    }
+
+    function restartMatchingGame() {
+      AudioEngine.tap();
+      initMatchingGame();
+    }
+
+    // ==========================================
+    // 6. SENTENCE BUILDER QUEST
+    // ==========================================
+    const questData = {
+      en: "Knowledge gives great power in future",
+      target_kk: "«Білім саған болашақта үлкен күш береді»",
+      target_ru: "«Знание дает великую силу в будущем»",
+      tokens: ["Knowledge", "gives", "great", "power", "in", "future"]
+    };
+
+    let questSelectedTokens = [];
+    let questScrambledTokens = [];
+
+    function renderQuestView() {
+      document.getElementById('questSentenceTarget').innerText = currentLanguage === 'kk' ? questData.target_kk : questData.target_ru;
+      questSelectedTokens = [];
+      questScrambledTokens = [...questData.tokens].sort(() => 0.5 - Math.random());
+      updateQuestBoards();
+    }
+
+    function updateQuestBoards() {
+      const selectedBox = document.getElementById('questSelectedArea');
+      const bankBox = document.getElementById('questWordBank');
+
+      // Selected area
+      selectedBox.innerHTML = '';
+      if (questSelectedTokens.length === 0) {
+        selectedBox.innerHTML = `<span class="text-xs text-slate-500 font-semibold">${i18n[currentLanguage].questHint}</span>`;
+      } else {
+        questSelectedTokens.forEach((word, idx) => {
+          const pill = document.createElement('button');
+          pill.className = "px-3.5 py-2 rounded-xl bg-indigoNeon text-white font-display font-black text-xs shadow-tactile-indigo btn-tactile";
+          pill.innerText = word;
+          pill.onclick = () => removeTokenFromQuest(idx);
+          selectedBox.appendChild(pill);
+        });
+      }
+
+      // Bank area
+      bankBox.innerHTML = '';
+      questScrambledTokens.forEach((word, idx) => {
+        const isUsed = questSelectedTokens.includes(word);
+        const pill = document.createElement('button');
+        pill.className = `px-3.5 py-2 rounded-xl font-display font-bold text-xs transition border ${
+          isUsed ? 'opacity-20 bg-slate-800 border-slate-700 text-slate-500 cursor-not-allowed' : 'bg-surface border-slate-600 text-white hover:border-mint-400 btn-tactile shadow-glass'
+        }`;
+        pill.innerText = word;
+        if (!isUsed) {
+          pill.onclick = () => addTokenToQuest(word);
+        }
+        bankBox.appendChild(pill);
+      });
+    }
+
+    function addTokenToQuest(word) {
+      AudioEngine.tap();
+      questSelectedTokens.push(word);
+      updateQuestBoards();
+    }
+
+    function removeTokenFromQuest(idx) {
+      AudioEngine.tap();
+      questSelectedTokens.splice(idx, 1);
+      updateQuestBoards();
+    }
+
+    function clearQuestSelection() {
+      AudioEngine.tap();
+      questSelectedTokens = [];
+      updateQuestBoards();
+    }
+
+    function verifyQuestSolution() {
+      const assembled = questSelectedTokens.join(' ');
+      if (assembled === questData.en) {
+        AudioEngine.success();
+        pronounceWord(questData.en);
+        showToast("🎉 Керемет! Сөйлем дұрыс жиналды! +25 XP");
+      } else {
+        AudioEngine.error();
+        showToast("Қателік бар, қайта тексеріп көріңіз");
+      }
+    }
+
+    // ==========================================
+    // 7. SCIENTIFIC RESEARCH DEFENSE CHART
+    // ==========================================
+    function drawResearchChart() {
+      const canvas = document.getElementById('researchChartCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      const w = canvas.parentElement.clientWidth;
+      const h = canvas.parentElement.clientHeight;
+      canvas.width = w * window.devicePixelRatio;
+      canvas.height = h * window.devicePixelRatio;
+      ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+
+      ctx.clearRect(0, 0, w, h);
+
+      // Days data points
+      const days = ['1', '4', '8', '11', '14'];
+      const expData = [35, 54, 72, 86, 94]; // Experimental LinguaQadam Group
+      const ctrlData = [33, 42, 48, 52, 58]; // Traditional Control Group
+
+      const paddingLeft = 32;
+      const paddingBottom = 24;
+      const chartW = w - paddingLeft - 16;
+      const chartH = h - paddingBottom - 16;
+
+      // Draw Grid Lines
+      ctx.strokeStyle = '#1e293b';
+      ctx.lineWidth = 1;
+      for (let i = 0; i <= 4; i++) {
+        const y = 16 + (chartH / 4) * i;
+        ctx.beginPath();
+        ctx.moveTo(paddingLeft, y);
+        ctx.lineTo(w - 16, y);
+        ctx.stroke();
+
+        ctx.fillStyle = '#64748b';
+        ctx.font = '10px Outfit, sans-serif';
+        ctx.textAlign = 'right';
+        ctx.fillText(`${100 - i * 20}%`, paddingLeft - 6, y + 3);
+      }
+
+      // X-Axis Labels
+      days.forEach((day, i) => {
+        const x = paddingLeft + (chartW / (days.length - 1)) * i;
+        ctx.fillStyle = '#94a3b8';
+        ctx.font = '10px Outfit, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(`Күн ${day}`, x, h - 6);
+      });
+
+      // Function to draw line
+      function renderLine(data, color, isDashed = false) {
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 3;
+        if (isDashed) ctx.setLineDash([5, 5]);
+        else ctx.setLineDash([]);
+
+        ctx.beginPath();
+        data.forEach((val, i) => {
+          const x = paddingLeft + (chartW / (days.length - 1)) * i;
+          const y = 16 + chartH - (val / 100) * chartH;
+          if (i === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        });
+        ctx.stroke();
+
+        // Draw dots
+        data.forEach((val, i) => {
+          const x = paddingLeft + (chartW / (days.length - 1)) * i;
+          const y = 16 + chartH - (val / 100) * chartH;
+          ctx.fillStyle = color;
+          ctx.beginPath();
+          ctx.arc(x, y, 4, 0, Math.PI * 2);
+          ctx.fill();
+        });
+      }
+
+      // Render Control Group line
+      renderLine(ctrlData, '#64748b', true);
+      // Render LinguaQadam Group line (Neon Mint)
+      renderLine(expData, '#05DF72', false);
+    }
+
+    // ==========================================
+    // 8. INTERACTIVE RAPID QUIZ MODAL
+    // ==========================================
+    let quizCurrentWord = "Knowledge";
+    let quizStep = 1;
+
+    function startLesson(nodeId) {
+      AudioEngine.tap();
+      quizStep = 1;
+      document.getElementById('quizModal').classList.remove('translate-y-full');
+      loadQuizQuestion();
+    }
+
+    function closeQuizModal() {
+      AudioEngine.tap();
+      document.getElementById('quizModal').classList.add('translate-y-full');
+    }
+
+    function loadQuizQuestion() {
+      document.getElementById('quizFeedbackBanner').classList.add('hidden');
+      document.getElementById('quizProgressBar').style.width = `${quizStep * 33}%`;
+
+      const q = vocabularyList[quizStep - 1] || vocabularyList[0];
+      quizCurrentWord = q.en;
+      document.getElementById('quizTargetWord').innerText = q.en;
+      document.getElementById('quizPhonetic').innerText = q.phonetic;
+
+      const correctAns = currentLanguage === 'kk' ? q.tr_kk : q.tr_ru;
+      let wrongOptions = vocabularyList
+        .filter(item => item.id !== q.id)
+        .map(item => currentLanguage === 'kk' ? item.tr_kk : item.tr_ru)
+        .slice(0, 3);
+
+      let allChoices = [correctAns, ...wrongOptions].sort(() => 0.5 - Math.random());
+
+      const container = document.getElementById('quizOptionsList');
+      container.innerHTML = '';
+
+      allChoices.forEach((text, i) => {
+        const btn = document.createElement('button');
+        btn.className = "w-full p-3.5 rounded-2xl bg-surface border border-slate-700 text-white font-display font-bold text-xs flex items-center justify-between text-left hover:border-mint-400 transition-all btn-tactile";
+        btn.innerHTML = `
+          <span>${text}</span>
+          <span class="w-6 h-6 rounded-full bg-surfaceLight border border-slate-600 text-slate-400 text-[10px] flex items-center justify-center">${String.fromCharCode(65 + i)}</span>
+        `;
+        btn.onclick = () => checkQuizAnswer(btn, text, correctAns);
+        container.appendChild(btn);
+      });
+    }
+
+    function checkQuizAnswer(buttonEl, selected, correct) {
+      const banner = document.getElementById('quizFeedbackBanner');
+      const title = document.getElementById('feedbackTitle');
+      const sub = document.getElementById('feedbackSubtitle');
+      const btnNext = document.getElementById('btnQuizContinue');
+
+      if (selected === correct) {
+        AudioEngine.success();
+        buttonEl.classList.remove('bg-surface', 'border-slate-700');
+        buttonEl.classList.add('bg-mint-500/20', 'border-mint-500', 'text-mint-300');
+        banner.className = "p-4 rounded-2xl bg-mint-500/20 border border-mint-500 flex items-center justify-between mt-auto";
+        title.innerText = i18n[currentLanguage].correct;
+        sub.innerText = "+15 XP";
+        btnNext.innerText = i18n[currentLanguage].next;
+      } else {
+        AudioEngine.error();
+        buttonEl.classList.remove('bg-surface', 'border-slate-700');
+        buttonEl.classList.add('bg-coralRed/20', 'border-coralRed', 'text-coralRed');
+        banner.className = "p-4 rounded-2xl bg-coralRed/20 border border-coralRed flex items-center justify-between mt-auto";
+        title.innerText = i18n[currentLanguage].wrong;
+        sub.innerText = `${i18n[currentLanguage].cardTransLabel}: ${correct}`;
+      }
+      banner.classList.remove('hidden');
+    }
+
+    function nextQuizStep() {
+      AudioEngine.tap();
+      quizStep++;
+      if (quizStep > 3) {
+        AudioEngine.levelUp();
+        closeQuizModal();
+        showToast("🎉 1-Қадам сәтті аяқталды! +50 XP");
+      } else {
+        loadQuizQuestion();
+      }
+    }
+
+    // ==========================================
+    // 9. NAVIGATION & GENERAL HELPERS
+    // ==========================================
+    function navigateToTab(tabName) {
+      AudioEngine.tap();
+
+      // Hide all tabs
+      document.querySelectorAll('.app-screen').forEach(s => s.classList.add('hidden'));
+      document.getElementById(`tab-${tabName}`).classList.remove('hidden');
+
+      // Update Nav active status
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('text-mint-400');
+        btn.classList.add('text-slate-400');
+      });
+      const currentNav = document.getElementById(`nav-btn-${tabName}`);
+      currentNav.classList.remove('text-slate-400');
+      currentNav.classList.add('text-mint-400');
+
+      // Special triggers
+      if (tabName === 'games') initMatchingGame();
+      if (tabName === 'quest') renderQuestView();
+      if (tabName === 'research') {
+        setTimeout(drawResearchChart, 150);
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('appToast');
+      toast.innerText = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2000);
+    }
+
+    function showToastLocked() {
+      AudioEngine.error();
+      showToast(currentLanguage === 'kk' ? "Бұл деңгей әзірге жабық 🔒" : "Этот уровень пока заблокирован 🔒");
+    }
+
+    // Window Init
+    window.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      applyLocalization();
+      window.addEventListener('resize', drawResearchChart);
+    });
+  </script>
+</body>
+</html>
